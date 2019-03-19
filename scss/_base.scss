@@ -59,14 +59,15 @@ html {
 }
 
 .fore {
-  -webkit-transform: translateZ(-50px) scale(1.2);
   transform: translateZ(100px) scale(.7);
   z-index: 9;
 }
-
 .fore2 {
-  -webkit-transform: translateZ(-50px) scale(1.2);
-  transform: translateZ(20px) scale(.93);
+  transform: translateZ(60px) scale(.8);
+  z-index: 16;
+}
+.fore3 {
+  transform: translateZ(40px) scale(.867);
   z-index: 16;
 }
 
@@ -88,64 +89,66 @@ html {
 
 
 /* slide over group 2 */
-#group1 {
+
+#group1{
   z-index: 8;
+  .base {
+    background: url('../img/mtn.png') 50% 50% no-repeat;
+    background-size: cover;
+    }
+  .fore {
+    background: url('../img/cloud.png') 50% 50% no-repeat;
+    background-size: cover;
+    transform: translateZ(100px) translateY(-25px) scale(.7);
+  }
+  .fore2 {
+    background: url('../img/subtitle.png') 50% 50% no-repeat;
+    background-size: cover;
+  }
+  .fore3{
+    background: url('../img/title.png') 50% 50% no-repeat;
+    transform: translateZ(20px) scale(.933);
+    background-size: cover;
+  }
+  .behind {
+    background: url('../img/sky.png') 50% 50% no-repeat;
+    background-size: cover;
+    transform: translateZ(-35px) translateY(-90px) scale(1.117);
+  }
 }
-
-#group1 .base {
-  background: url('../img/mtn.png') 50% 50% no-repeat;
-  background-size: cover;
-}
-#group1 .fore {
-  background: url('../img/cloud.png') 50% 50% no-repeat;
-  background-size: cover;
-  transform: translateZ(100px) translateY(-25px) scale(.7);
-}
-#group1 .fore2 {
-  background: url('../img/text.png') 50% 50% no-repeat;
-  background-size: cover;
-}
-#group1 .behind {
-  background: url('../img/sky.png') 50% 50% no-repeat;
-  background-size: cover;
-  transform: translateZ(-70px) translateY(-120px) scale(1.24);
-}
-
 /* slide under groups 1 and 3 */
 #group2 {
   z-index: 6;
-}
-
-#group2 .base {
-  background: url('../img/land-1.png') 50% 50% no-repeat;
-  background-size: cover;
-}
-
-#group2 .fore {
-  background: url('../img/land-2.png') 50% 50% no-repeat;
-  background-size: cover;
-  /*opacity: .5;*/
-}
-
-#group2 .behind {
-  background: url('../img/land-3.png') 50% 50% no-repeat;
-  background-size: cover;
-}
-
-#group2 .deep {
-  background: url('../img/land-4.png') 50% 50% no-repeat;
-  background-size: cover;
+  .base {
+    background-color: #7C6959;
+    z-index: 7;
+  }
+  .fore {
+    background: url('../img/nest.png') 50% 50% no-repeat;
+    background-size: cover;
+    z-index: 100;
+  }
+  .fore2 {
+    background: url('../img/hill1.png') 50% 50% no-repeat;
+    background-size: cover;
+    z-index: 9;
+  }
+  .fore3 {
+    background: url('../img/hill2.png') 50% 50% no-repeat;
+    background-size: cover;
+    z-index: 10;
+  }
 }
 
 /* slide over group 2*/
 #group3 {
   z-index: 7; 
+  .base {
+    background: url('http://placehold.it/960x450/ff0000') 50% 50% no-repeat;
+    background-size: cover;
+  }
 }
 
-#group3 .base {
-  background: url('http://placehold.it/960x450/ff0000') 50% 50% no-repeat;
-  background-size: cover;
-}
 
 /*content styles*/
 body {
