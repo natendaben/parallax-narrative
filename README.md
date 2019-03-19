@@ -1,6 +1,6 @@
-# boilerplate
+# Parallax Narrative
 
-A custom boilerplate designed by Nate Bennett. To be used as a template for future projects.
+A parallax website designed by Nate Bennett. Uses exclusively CSS and original artwork to implement parallax effect, and tell the story of a chinstrap penguin.
 
 Built from the HTML5 Boilerplate v7, includes compass and sass functionality. 
 
