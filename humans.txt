@@ -1,0 +1,17 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+Currently a custom boilerplate designed by Nate Bennett. This text will be changed as the template is used for future projects and websites.
+
+# TEAM
+
+    Nate Bennett
+
+# THANKS
+
+   	David Schaal
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5
+    Apache Server Configs, jQuery, Modernizr, Normalize.css

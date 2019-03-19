@@ -1,0 +1,229 @@
+/*universal styles*/
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  overflow: hidden;
+}
+/*parallax styles*/
+
+.parallax {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-perspective: 300px;
+  perspective: 300px;
+}
+
+.parallaxLayer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.group {
+  position: relative;
+  padding: 25vh 10%;
+  min-height: 100vh;
+  width: 100vw;
+  transform-style: inherit;
+  background: 50% 50% / cover;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+}
+
+.group:before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: 50% 50% / cover;
+}
+
+/*base styles*/
+
+.base {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0) scale(1);
+  z-index: 15;
+}
+
+.fore {
+  -webkit-transform: translateZ(-50px) scale(1.2);
+  transform: translateZ(100px) scale(.7);
+  z-index: 9;
+}
+
+.fore2 {
+  -webkit-transform: translateZ(-50px) scale(1.2);
+  transform: translateZ(20px) scale(.93);
+  z-index: 16;
+}
+
+
+.behind {
+  -webkit-transform: translateZ(-50px) scale(1.2);
+  transform: translateZ(-50px) scale(1.2);
+  z-index: 0;
+}
+
+.deep {
+  /*-webkit-transform: translateZ(-50px) scale(1.2);*/
+  transform: translateZ(-86px) scale(1.3);
+  z-index: 5;
+}
+
+
+/*group styles*/
+
+
+/* slide over group 2 */
+#group1 {
+  z-index: 8;
+}
+
+#group1 .base {
+  background: url('../img/mtn.png') 50% 50% no-repeat;
+  background-size: cover;
+}
+#group1 .fore {
+  background: url('../img/cloud.png') 50% 50% no-repeat;
+  background-size: cover;
+  transform: translateZ(100px) translateY(-25px) scale(.7);
+}
+#group1 .fore2 {
+  background: url('../img/text.png') 50% 50% no-repeat;
+  background-size: cover;
+}
+#group1 .behind {
+  background: url('../img/sky.png') 50% 50% no-repeat;
+  background-size: cover;
+  transform: translateZ(-70px) translateY(-120px) scale(1.24);
+}
+
+/* slide under groups 1 and 3 */
+#group2 {
+  z-index: 6;
+}
+
+#group2 .base {
+  background: url('../img/land-1.png') 50% 50% no-repeat;
+  background-size: cover;
+}
+
+#group2 .fore {
+  background: url('../img/land-2.png') 50% 50% no-repeat;
+  background-size: cover;
+  /*opacity: .5;*/
+}
+
+#group2 .behind {
+  background: url('../img/land-3.png') 50% 50% no-repeat;
+  background-size: cover;
+}
+
+#group2 .deep {
+  background: url('../img/land-4.png') 50% 50% no-repeat;
+  background-size: cover;
+}
+
+/* slide over group 2*/
+#group3 {
+  z-index: 7; 
+}
+
+#group3 .base {
+  background: url('http://placehold.it/960x450/ff0000') 50% 50% no-repeat;
+  background-size: cover;
+}
+
+/*content styles*/
+body {
+  background: black;
+}
+.title {
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  background: rgba(0,0,0,.5);
+  border-radius: 20px;
+}
+
+h1 {
+  color: white;
+  font-size: 80px;
+  font-family: serif;
+  text-align: center;
+  position: absolute;
+  z-index: 999;
+}
+
+p {
+  font-size: 20px;
+  color: white;
+  font-family: sans-serif;
+  line-height: 40px;
+  padding: 20px;
+  width: 70%;
+  left: 4%;
+  bottom: 50%;
+  background: rgba(0, 10, 10, 0.4);
+  border-radius: 25px;
+  transform: translateZ(100px) scale(0.6);
+  position: absolute;
+  z-index: 999;
+}
+
+figure {
+    width: 12%;
+    left: 50%;
+    bottom: 40%;
+    transform: translateZ(200px) scale(0.6) rotate(20deg);
+
+    position: absolute;
+    z-index: 999;
+}
+
+img {
+  vertical-align: middle;
+  max-width: 100%;
+  border-radius: 50px;
+}
+
+header {
+  overflow: hidden;
+  padding-bottom: 55%;
+}
+
+header img {
+  width: 100%;
+  max-width: none;
+  position: fixed;
+  top: 0%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+
+
+
+
+
+
+
