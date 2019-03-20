@@ -420,7 +420,6 @@ textarea {
   padding: 0.2em 0;
 }
 
-/*universal styles*/
 *,
 *:before,
 *:after {
@@ -432,6 +431,21 @@ textarea {
 html {
   height: 100%;
   overflow: hidden;
+}
+
+p {
+  text-align: center;
+  font-size: 1.5em;
+  color: white;
+  font-family: 'Futura', sans-serif;
+  line-height: 1.3em;
+  padding: 20px;
+  width: 40%;
+  top: 20%;
+  left: 10%;
+  background: rgba(10, 10, 10, 0.4);
+  border-radius: 25px;
+  position: absolute;
 }
 
 /*parallax styles*/
@@ -502,8 +516,13 @@ html {
 
 .deep {
   /*-webkit-transform: translateZ(-50px) scale(1.2);*/
-  transform: translateZ(-86px) scale(1.3);
+  transform: translateZ(-100px) scale(1.333);
   z-index: 5;
+}
+
+.forer {
+  transform: translateZ(170px) scale(0.433);
+  z-index: 101;
 }
 
 /*group styles*/
@@ -522,6 +541,7 @@ html {
 }
 #group1 .fore2 {
   background: url("../img/subtitle.png") 50% 50% no-repeat;
+  transform: translateZ(50px) translateY(60px) scale(0.833);
   background-size: cover;
 }
 #group1 .fore3 {
@@ -564,81 +584,70 @@ html {
   z-index: 7;
 }
 #group3 .base {
-  background: url("http://placehold.it/960x450/ff0000") 50% 50% no-repeat;
+  background: url("../img/icebg.png") 50% 50% no-repeat;
+  background-size: cover;
+  z-index: 17;
+}
+#group3 .fore {
+  background: url("../img/slide.png") 50% 50% no-repeat;
+  background-size: cover;
+  transform: translateZ(120px) translateY(0px) scale(0.6);
+  z-index: 18;
+}
+#group3 .fore2 {
+  background: url("../img/pen.png") 50% 50% no-repeat;
+  background-size: cover;
+  transform: translateZ(20px) translateY(-10px) scale(0.933);
+  z-index: 19;
+}
+#group3 p {
+  left: 5%;
+  top: 60%;
+}
+
+#group4 .base {
+  background: url("../img/cliff.png") 50% 50% no-repeat;
+  background-size: cover;
+  z-index: 20;
+}
+#group4 .fore {
+  background: url("../img/frontwave.png") 50% 50% no-repeat;
+  transform: translateZ(100px) translateY(210px) scale(0.7);
+  background-size: cover;
+  z-index: 100;
+}
+#group4 .fore2 {
+  background: url("../img/backwave.png") 50% 50% no-repeat;
+  background-size: cover;
+  z-index: 90;
+}
+#group4 .fore3 {
+  background: url("../img/splash.png") 50% 50% no-repeat;
+  transform: translateZ(200px) translateY(120px) scale(0.333);
+  background-size: cover;
+  z-index: 80;
+}
+#group4 .behind {
+  background: url("../img/smallmtn.png") 50% 50% no-repeat;
+  transform: translateZ(-50px) translateY(70px) scale(1.2);
   background-size: cover;
 }
-
-/*content styles*/
-body {
-  background: black;
+#group4 .deep {
+  background: url("../img/oceansky.png") 50% 50% no-repeat;
+  background-size: cover;
+  z-index: -50;
+}
+#group4 p {
+  top: 40%;
+  left: 40%;
+  z-index: 1000;
 }
 
-.title {
-  text-align: center;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  padding: 10px;
-  background: rgba(0, 0, 0, 0.5);
-  border-radius: 20px;
+#group5 {
+  z-index: 200;
 }
-
-h1 {
-  color: white;
-  font-size: 80px;
-  font-family: serif;
-  text-align: center;
-  position: absolute;
-  z-index: 999;
-}
-
-p {
-  font-size: 20px;
-  color: white;
-  font-family: sans-serif;
-  line-height: 40px;
-  padding: 20px;
-  width: 70%;
-  left: 4%;
-  bottom: 50%;
-  background: rgba(0, 10, 10, 0.4);
-  border-radius: 25px;
-  transform: translateZ(100px) scale(0.6);
-  position: absolute;
-  z-index: 999;
-}
-
-figure {
-  width: 12%;
-  left: 50%;
-  bottom: 40%;
-  transform: translateZ(200px) scale(0.6) rotate(20deg);
-  position: absolute;
-  z-index: 999;
-}
-
-img {
-  vertical-align: middle;
-  max-width: 100%;
-  border-radius: 50px;
-}
-
-header {
-  overflow: hidden;
-  padding-bottom: 55%;
-}
-
-header img {
-  width: 100%;
-  max-width: none;
-  position: fixed;
-  top: 0%;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
+#group5 .base {
+  background-color: red;
 }
 
 /* ==========================================================================
