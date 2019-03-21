@@ -65,10 +65,7 @@ p {
   background: 50% 50% / cover;
 }
 
-/*base styles*/
-
 .base {
-  -webkit-transform: translateZ(0);
   transform: translateZ(0) scale(1);
   z-index: 15;
 }
@@ -77,6 +74,7 @@ p {
   transform: translateZ(100px) scale(.7);
   z-index: 9;
 }
+
 .fore2 {
   transform: translateZ(60px) scale(.8);
   z-index: 16;
@@ -86,15 +84,12 @@ p {
   z-index: 16;
 }
 
-
 .behind {
-  -webkit-transform: translateZ(-50px) scale(1.2);
   transform: translateZ(-50px) scale(1.2);
   z-index: 0;
 }
 
-.deep {
-  /*-webkit-transform: translateZ(-50px) scale(1.2);*/
+.deep { //slowest
   transform: translateZ(-100px) scale(1.333);
   z-index: 5;
 }
@@ -103,10 +98,6 @@ p {
     transform: translateZ(170px) scale(.433);
     z-index: 101;
   }
-
-
-/*group styles*/
-
 
 /* slide over group 2 */
 
@@ -226,9 +217,79 @@ p {
     z-index: 1000;
   }
 }
+
 #group5{
-  z-index: 200;
   .base{
-    background-color: red;
+    background: url('../img/lastsky.png') 50% 50% no-repeat;
+    background-size: cover;
+    transform: translateZ(0) scale(1);
+    z-index: 101;
+  }
+  .fore{
+    background: url('../img/fish3.png') 50% 50% no-repeat;
+    background-size: cover;
+    transform: translateZ(100px) scale(.7);
+    z-index: 106;
+  }
+  .fore2{
+    background: url('../img/fish2.png') 50% 50% no-repeat;
+    background-size: cover;
+    transform: translateZ(60px) scale(.8);
+    z-index: 105;
+  }
+  .fore3{
+    background: url('../img/fish1.png') 50% 50% no-repeat;
+    background-size: cover;
+    transform: translateZ(40px) scale(.867);
+    z-index: 104;
+  }
+  .forer{
+    background: url('../img/peng.png') 50% 50% no-repeat;
+    background-size: cover;
+    transform: translateZ(80px) scale(.733);
+    z-index: 107;
+  }
+  .behind{
+    background: url('../img/newsand.png') 50% 50% no-repeat;
+    background-size: cover;
+    transform: translateZ(30px) translateY(200px) scale(.9);
+    z-index: 103;
+  }
+  .deep{
+    background: url('../img/ocean.png') 50% 50% no-repeat;
+    background-size: cover;
+    transform: translateZ(30px) scale(.9);
+    z-index: 102;
+  }
+  p{
+    top: 30%;
+    left: 50%;
+  }
+}
+
+#group6{
+  background-color: lightseagreen;
+  z-index: 999;
+  .base {
+    background: url('../img/small.png') 50% 50% no-repeat;
+    background-size: cover;
+  }
+  .fore{
+    background: url('../img/large.png') 50% 50% no-repeat;
+    background-size: cover;
+  }
+  .fore2{
+    background: url('../img/med.png') 50% 50% no-repeat;
+    background-size: cover;
+  }
+  footer{
+    font-size: 1.5em;
+    color: white;
+    font-family: 'Futura', sans-serif;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    padding: 2%;
+    left: 19%;
   }
 }
